@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>e-Tax Solution</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f9;
+}
+
+/* Header */
+header {
+  background: #0d6efd;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Container */
+.container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Card */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Title */
+.card h3 {
+  margin-top: 0;
+  color: #0d6efd;
+}
+
+/* List */
+ul {
+  padding-left: 18px;
+  text-align: left;
+}
+
+/* Button */
+button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  background: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  background: #084298;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #222;
+  color: white;
+  margin-top: 20px;
+}
+
+/* Responsive text */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 20px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>e-Tax Solution</h1>
+  <p>Your One Stop Cyber Cafe Service</p>
+</header>
+
+<div class="container">
+
+  <!-- Aadhaar -->
+  <div class="card">
+    <h3>Aadhaar Card</h3>
+    <p><b>Required Documents:</b></p>
+    <ul>
+      <li>Photo</li>
+      <li>Address Proof</li>
+    </ul>
+    <button onclick="openForm('Aadhaar')">Apply Now</button>
+  </div>
+
+  <!-- PAN -->
+  <div class="card">
+    <h3>PAN Card</h3>
+    <p><b>Required Documents:</b></p>
+    <ul>
+      <li>Aadhaar Card</li>
+      <li>Photo</li>
+      <li>Address Proof</li>
+    </ul>
+    <button onclick="openForm('PAN')">Apply Now</button>
+  </div>
+
+  <!-- GST -->
+  <div class="card">
+    <h3>GST Billing</h3>
+    <p><b>Required Documents:</b></p>
+    <ul>
+      <li>GST Details</li>
+      <li>Bank Account</li>
+    </ul>
+    <button onclick="openForm('GST')">Apply Now</button>
+  </div>
+
+  <!-- Ticket -->
+  <div class="card">
+    <h3>Online Ticket Booking</h3>
+    <p><b>Required Details:</b></p>
+    <ul>
+      <li>Name</li>
+      <li>Age</li>
+      <li>Contact Number</li>
+      <li>ID Proof</li>
+    </ul>
+    <button onclick="openForm('Ticket')">Apply Now</button>
+  </div>
+
+  <!-- Digital Signature -->
+  <div class="card">
+    <h3>Digital Signature</h3>
+    <p><b>Required Documents:</b></p>
+    <ul>
+      <li>PAN Card</li>
+      <li>Aadhaar Card</li>
+      <li>Passport Size Photo</li>
+      <li>Active Email/Mobile</li>
+    </ul>
+    <button onclick="openForm('DSC')">Apply Now</button>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 e-Tax Solution | All Rights Reserved</p>
+</footer>
+
+<script>
+function openForm(service) {
+  const formLink = "https://tally.so/r/pbGQZq";
+  window.open(formLink, "_blank");
+}
+</script>
+
+</body>
+</html>
